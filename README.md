@@ -25,19 +25,50 @@ Website ini merupakan proyek company profile bergaya portal universitas yang dik
 
 1. Clone repositori:
    `git clone https://github.com/ImanuelTaka/web-universitas.git && cd web-universitas`
-2. Install dependency:
-   `composer install`
-3. Copy file konfigurasi:
-   `cp .env.example .env`
+2. Install dependencies PHP
+   ```bash
+   composer install
+   ```
+3. Copy file environment
+   ```bash
+   cp .env.example .env
+   ```
 4. Generate key:
-   `php artisan key:generate`
+   ```bash
+   php artisan key:generate
+   ```
 5. Atur koneksi database di file `.env`
 6. Jalankan migrasi:
-   `php artisan migrate`
+    ```bash
+   php artisan migrate
+   ```
 7. Buat user admin Filament
-   `php artisan make:filament-user`
+    ```bash
+   php artisan make:filament-user
+   ```
 8. Jalankan server:
-   `php artisan serve`
+   ```bash
+   php artisan serve
+   ```
+
+## Cara Login Admin Panel
+
+Buka browser ke:
+
+```
+http://localhost:8000/admin/login
+```
+
+Gunakan user admin yang sudah dibuat lewat perintah `php artisan make:filament-user`.
+
+---
+
+## Catatan
+
+- Jangan commit file `.env` dan folder `node_modules` atau `vendor`
+- Proyek ini dibuat untuk portofolio
+
+---
 
 ## Keterangan
 
@@ -46,3 +77,5 @@ Proyek ini dibuat untuk keperluan pembelajaran dan portofolio pribadi. Semua kon
 ## Lisensi
 
 Bebas digunakan untuk keperluan pembelajaran dan pengembangan pribadi.
+
+Terima kasih sudah melihat proyek ini!
