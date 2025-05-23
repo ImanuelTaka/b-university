@@ -4,7 +4,7 @@ Website ini merupakan proyek company profile bergaya portal universitas yang dik
 
 ## Teknologi
 
--   Laravel 11
+-   Laravel 12
 -   PHP 8.x
 -   MySQL
 -   Blade Template Engine
